@@ -1,0 +1,34 @@
+@import '../../mixins/breakpoints';
+$divide-line: #CACDD8;
+
+.cart-listing {
+  width: 100%;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    height: 66px;
+
+    div {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    @include mobileScreen {
+      display: none;
+    }
+  }
+
+  &-buttons {
+    margin-top: 50px;
+    display: flex;
+
+    :first-child {
+      margin-right: 5px;
+    }
+  }
+
+  hr {
+    background-color: $divide-line;
+  }
+}

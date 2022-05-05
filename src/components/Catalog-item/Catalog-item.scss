@@ -1,0 +1,46 @@
+@import '../react-shop/src/mixins/breakpoints';
+
+.catalog-item-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.catalog-item {
+  height: 514px;
+  width: 379px;
+
+  &-picture {
+    height: 250px;
+    width: 379px;
+  }
+
+  &-title {
+    height: 31px;
+    width: 219px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+
+  &-description {
+    height: 37px;
+    width: 379px;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+  }
+
+  &-price {
+    height: 37px;
+    width: 156px;
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+}

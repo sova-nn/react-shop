@@ -1,0 +1,10 @@
+.popup-content {
+  width: unset;
+  padding: 32px;
+}
+
+.popup-child {
+  & > div:not(:first-child) {
+    margin-top: 32px;
+  }
+}

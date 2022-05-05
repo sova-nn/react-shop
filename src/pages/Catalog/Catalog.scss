@@ -1,0 +1,14 @@
+@import '../../mixins/breakpoints';
+
+.catalog-wrapper{
+  margin: 0 120px;
+
+  @include tabletScreen {
+    margin: 0 24px;
+  }
+
+  @include mobileScreen {
+    margin: 0;
+  }
+}
+

@@ -1,0 +1,21 @@
+@import '../../mixins/breakpoints';
+
+$light-gray: #C4C4C4;
+$white: #FFFFFF;
+
+.sorting-wrapper {
+  display: grid;
+  justify-content: flex-end;
+
+  @include mobileScreen {
+    margin: 0 10px;
+  }
+}
+.sorting {
+  height: 38px;
+  width: 288px;
+  margin-top: 33px;
+  border: 1px solid $light-gray;
+  border-radius: 20px;
+  background-color: $white;
+}

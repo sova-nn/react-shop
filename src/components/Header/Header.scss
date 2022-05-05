@@ -1,0 +1,50 @@
+@import '../../mixins/breakpoints';
+
+$gray: #CCCCCC;
+$white: #FFFFFF;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: $gray;
+  height: 76px;
+
+  @include mobileScreen {
+    height: 89px;
+  }
+
+  &-title {
+    display: grid;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43.88px;
+    color: $white;
+
+    @include mobileScreen {
+      font-size: 18px;
+      line-height: 21.94px;
+      padding-left: 16px;
+    }
+  }
+
+  &-title-cart {
+    padding: 52px 20px;
+  }
+
+  &-title-other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: $white;
+
+    @include mobileScreen {
+      display: none;
+    }
+  }
+}

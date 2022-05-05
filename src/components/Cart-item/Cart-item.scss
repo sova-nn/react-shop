@@ -1,0 +1,88 @@
+@import '../../mixins/breakpoints';
+
+$price-gray: #050505;
+$counter-gray: #F7F6F6;
+
+.cart-item {
+  //border: 2px solid cadetblue;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+  &-picture {
+    height: 173px;
+    margin-right: 31px;
+    overflow: hidden;
+
+    @include mobileScreen {
+      display: none;
+    }
+  }
+
+  &-popup-picture {
+    height: 173px;
+    width: 173px;
+    margin-right: 31px;
+    overflow: hidden;
+  }
+
+  &-title {
+    height: 31px;
+    width: 219px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+
+  &-description {
+    width: 276px;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+  }
+
+  &-price {
+    height: 37px;
+    width: 156px;
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: $price-gray;
+    font-size: 15px;
+    line-height: 19.5px;
+  }
+
+  &-buttons-block {
+
+    .cart-button {
+      text-decoration: underline;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 29.4px;
+    }
+    :first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &-count {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    input {
+      background-color: $counter-gray;
+      border: unset;
+      border-radius: 6px;
+      height: 50px;
+      width: 70px;
+    }
+
+  }
+}

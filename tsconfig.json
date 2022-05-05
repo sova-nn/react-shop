@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "tsx": "react",
+    "resolve": {
+      "extensions": [".ts", ".tsx", ".js"]
+    }
+  },
+  "include": [
+    "./src/*",
+  ]
+}

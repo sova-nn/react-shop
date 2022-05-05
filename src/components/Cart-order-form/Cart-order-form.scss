@@ -1,0 +1,67 @@
+@import '../../mixins/breakpoints';
+
+$order-gray: #F7F6F6;
+
+.cart-order {
+  height: 556px;
+  width: 379px;
+  background-color: $order-gray;
+  border-radius: 20px;
+  margin-left: 33px;
+
+  @include tabletScreen {
+    margin-left: unset;
+  }
+
+  @include mobileScreen {
+    margin-left: unset;
+  }
+
+  &-header {
+    padding-top: 42px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  &-field {
+    margin: 35px 27px auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    width: 288px;
+
+    input {
+      border: none;
+      border-bottom: 1px solid #000;
+      background-color: unset;
+      width: 100%;
+    }
+  }
+
+  &-total {
+    margin-top: 64px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &-button {
+    border-radius: 20px;
+    width: 379px;
+
+    input {
+      border: 2px solid black;
+      border-radius: 20px;
+      width: 317px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19.5px;
+      margin-top: 12px;
+    }
+  }
+}

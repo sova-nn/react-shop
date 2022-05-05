@@ -1,0 +1,33 @@
+@import '../../mixins/breakpoints';
+
+.cart-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 0 120px 0 120px;
+
+  @include tabletScreen {
+    margin: 0 24px 0 24px;
+  }
+
+  @include mobileScreen {
+    margin: 0;
+  }
+
+  .cart-main {
+    display: flex;
+
+    @include tabletScreen {
+      flex-direction: column;
+    }
+
+    @include mobileScreen {
+      flex-direction: column;
+      margin: 0 16px 0 16px;;
+    }
+  }
+}
+
+.cart-order-form {
+  margin-top: 32px;
+}
+

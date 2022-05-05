@@ -1,0 +1,19 @@
+$mobileWindowWidth: 375px;
+$tabletWindowWidth: 834px;
+$desktopWindowWidth: 1440px;
+
+@mixin desktopScreen {
+  @media only screen and (min-width: $desktopWindowWidth) {
+    @content;
+  }
+}
+@mixin tabletScreen {
+  @media only screen and (min-width: $tabletWindowWidth) and (max-width: $desktopWindowWidth - 1px){
+    @content;
+  }
+}
+@mixin mobileScreen {
+  @media only screen and (max-width: $tabletWindowWidth - 1px) {
+    @content;
+  }
+}
